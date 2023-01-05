@@ -1,0 +1,126 @@
+
+#root .App {
+  min-height: 100vh; 
+}
+
+.content {
+  padding-top: 6.9rem;
+  width: 100%;
+}
+
+svg{
+  height: 24px;
+  width: 24px;
+}
+
+.mg-auto {
+  margin: auto;
+}
+
+.setheight22rem{
+  height: 22rem !important;
+}
+.setheight28rem{
+  height: 28rem !important;
+}
+.slide1{
+  margin-right: 23rem;
+}
+.slide1 .carousel-inner{
+  display: inherit !important;
+}
+
+.type_of_r_place img {
+  width: 15rem !important;
+  height: 10rem !important;
+}
+.type_of_r_place {
+  height: 10rem !important;
+  width: 25%;
+}
+.carousel-inner {
+  display: contents;
+}
+.carousel-indicators {
+  top: 26rem;
+}
+.Sites {
+  height: 15rem;
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  cursor: pointer;
+}
+.carousel-item{
+  cursor: pointer;
+}
+.Sites:hover{
+  -webkit-transform: scale(1.0005);
+	transform: scale(1.0005);
+  background-size: 105% 105%;
+}
+.setbackgroud {
+  background: no-repeat url('../../image/long_stays_banner_wide.a1b12d47.png');
+  color: #ffffff;
+  background-size: 100% 100%;
+  border-radius: 1rem;
+}
+
+.Ha_noi {
+  background: no-repeat url('https://res.cloudinary.com/dxivl2lh5/image/upload/v1669727181/places/hoguom_pjasff.jpg');
+  color: #ffffff;
+  background-size: 100% 100%;
+}
+.Hoi_an {
+  background: no-repeat url('https://res.cloudinary.com/dxivl2lh5/image/upload/v1669727190/places/Hoi-An_mlyenf.jpg');
+  color: #ffffff;
+  background-size: 100% 100%;
+}
+.TPHCM {
+  background: no-repeat
+    url('https://res.cloudinary.com/dxivl2lh5/image/upload/v1669727296/places/thanh-pho-thu-duc-tp-ho-chi-minh-41120_ohpzj7.jpg');
+  color: #ffffff;
+  background-size: 100% 100%;
+}
+.Hue {
+  background: no-repeat url('https://res.cloudinary.com/dxivl2lh5/image/upload/v1669727200/places/hue_t5dvid.jpg');
+  color: #ffffff;
+  background-size: 100% 100%;
+}
+.NhaTrang {
+  background: no-repeat url('https://res.cloudinary.com/dxivl2lh5/image/upload/v1669727272/places/nhatrang_frvwlf.jpg');
+  color: #ffffff;
+  background-size: 100% 100%;
+}
+.National_flag img {
+  height: 2rem !important;
+  width: 2rem !important;
+}
+.home img {
+  position: absolute;
+  width: 100%;
+  height: 28rem;
+  object-fit: cover;
+}
+
+.info_select {
+  position: relative;
+  font-size: 2rem;
+  color: aliceblue;
+  height: 500px;
+  width: 800px;
+  z-index: 16;
+  top: 100px;
+  left: 200px;
+}
+.text_1,
+.text_2,
+.text_3 {
+  color: #fff;
+}
+.text_3 {
+  font-size: 21px;
+}
+.text_2 {
+  font-weight: bold;
+  font-size: 40px;
+}

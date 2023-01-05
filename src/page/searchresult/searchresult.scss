@@ -1,0 +1,131 @@
+
+.date_location{
+  margin-top: 14rem;
+  z-index: 1;
+}
+.search{
+  padding: 10%;
+}
+.setbackgroundsearch{
+  background-color: #99FCB1;
+
+}
+.container{
+  margin-top: 110px;
+}
+.item-hotel {
+  height: 15rem;
+}
+.search-result .booking-search-bar form{
+  width: 100% !important;
+  height: 1.5rem;
+}
+
+.search-result .booking-search-bar .search{
+  background: #F7F6DC;
+  border-radius: 0px;
+  position: fixed;
+  border: 5px solid #F7F6DC;
+  width: 100%;
+  top: 110px;
+}
+
+.search-result .booking-search-bar .search + .content{
+  padding-top: 100px;
+}
+
+.main-search {
+  display: grid;
+  grid-template-columns: 280px auto;
+  grid-gap: 20px;
+}
+
+.box-position, .bg-box{
+  background-color: #F7F6DC !important;
+  padding: 10px;
+}
+
+.list-filter .title-filter {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 15px;
+  padding: 15px 20px;
+}
+
+.list-filter h3 {
+  padding: 15px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #002864;
+  margin-bottom: 0;
+  line-height: normal;
+  border-bottom: 1px solid #002864;
+}
+
+.list-filter ul {
+  margin-bottom: 0;
+}
+
+.list-filter ul li {
+  margin-bottom: 15px;
+}
+
+.item-hotel{
+  display: grid;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  grid-template-columns: 300px auto 150px;
+  grid-gap: 20px;
+}
+
+.price{
+  display: flex;
+}
+
+.count-sort{
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: normal;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.item-hotel .item-content{
+  padding-right: 20px;
+}
+
+.address svg{
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  opacity: 0.5;
+}
+
+.address{
+  font-weight: lighter;
+  padding-top: 20px;
+}
+
+.item-hotel .price {
+  padding-left: 20px;
+  border-left: 1px solid rgba(0, 0, 0, 0.09);
+  display: flex;
+}
+
+.item-hotel .price .content-price {
+  width: 100%;
+  margin-top: auto;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.item-hotel .price .content-price .c-price {
+  font-size: 24px;
+  color: #F2A900;
+  font-weight: 700;
+}

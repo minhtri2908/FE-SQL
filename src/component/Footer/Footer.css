@@ -1,0 +1,10 @@
+.footer {
+    width: 100%;
+    background-color: #1aa37a;
+    height: 400px;
+    position: absolute;
+    font-size: 17px;
+}
+.media{
+    padding-left: 860px;
+}

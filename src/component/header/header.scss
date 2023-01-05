@@ -1,0 +1,116 @@
+.App-header {
+  background-image: linear-gradient(-90deg, #1aa37a, #9dffb3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.form-inline svg {
+  height: 38px;
+  width: 38px;
+}
+.dropdown svg {
+  height: 15px;
+  width: 15px;
+  margin-right: 15px;
+}
+
+.color_hover_btn_outline_info {
+  border-radius: 5rem;
+  background: black;
+  color: aliceblue;
+}
+.color_hover_btn_outline_info:hover {
+  background-color: #1aa37a;
+}
+.logo_team {
+  margin-right: 15rem;
+  font-weight: bold;
+  font-family: cursive;
+}
+.button-navbar {
+  border-radius: 5rem;
+}
+.btn_sign {
+  margin-left: 10px;
+  border-radius: 5rem;
+}
+.btn_select_list {
+  background-color: transparent;
+}
+.buton_text {
+  background-image: linear-gradient(-90deg, #9ef9d8, #caf6bf);
+  color: black;
+  border-color: transparent;
+  border-radius: 5rem;
+}
+.buton_text:hover {
+  background-color: #1aa37a;
+  border-color: transparent;
+}
+.image-slide {
+  display: contents;
+}
+.location-select-image {
+  padding-top: 26rem;
+}
+
+
+
+
+.headerSearchItem{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput{
+  border: none;
+  outline: none;
+}
+
+.headerSearcText {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.date{
+  position: absolute;
+  top: 140px;
+  display: flex;
+}
+
+.people{
+  position: absolute;
+  top: 140px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+
+}
+.peopleItem{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.btn-user{
+  width: 38px;
+  height: 38px;
+  background-image: url('../../image/avatar.jpg');
+  background-size: contain;
+  margin-left: 10px;
+  border-radius: 5rem;
+}
+
+.form-inline{
+  float: right;
+  margin-left: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}

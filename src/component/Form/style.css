@@ -1,0 +1,21 @@
+.login{
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.color-btn {
+    color: white;
+    background: linear-gradient(-90deg, #1aa37a, #9dffb3);
+    border-color: transparent;
+}
+.color-btn:hover {
+    background: white;
+    color: black;
+    border-color: black;
+}
+.app {
+    height: 100%;
+    width: 100%;
+}

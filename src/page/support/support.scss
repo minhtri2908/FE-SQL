@@ -1,0 +1,99 @@
+
+#intro {
+    background-image: url('https://cf.bstatic.com/backend_static/common/img/joinapp/trust_landing/trust_safety_mini_site_bg/0a660b81fa358d6c5a964233b961654dafae513e.png');
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 580px;
+    background-size: cover;
+  }
+  
+  .color-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .col {
+    float: left;
+    padding: 10px;
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 75%;
+  }
+  
+  .color-white {
+    color: white;
+  }
+  
+  .info-container {
+    padding-top: 10rem;
+    padding-left: 15rem;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .info_header {
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: bold;
+  }
+  
+  .info_body {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  .info_subheader {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  #detail {
+    width: 100%;
+  }
+  
+  .text-container-medium {
+    padding-bottom: 10px;
+    padding-top: 40px;
+    padding-left: 15rem;
+  }
+  
+  .detail_icon {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .feature_header {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  
+  .feature_column {
+    margin-right: 13rem;
+  }
+  
+  .feature-small {
+    font-size: 14px;
+  }
+  
+  #privacy {
+    margin-top: 10rem;
+  }
+  
+  .btn-support {
+    text-align: center;
+    margin-left: 45%;
+    border: none;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  }

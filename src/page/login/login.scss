@@ -1,0 +1,29 @@
+
+
+.login-form {
+    width: 40%;
+  }
+  .icon-link {
+    cursor: pointer;
+    color: 'none';
+  }
+  .color-btn {
+    background: white;
+    color: black;
+    border-color: black;
+  }
+  .color-btn:hover {
+    color: white;
+    background: linear-gradient(-90deg, #1aa37a, #9dffb3);
+    border-color: transparent;
+  }
+  .logo_team1 {
+    margin-right: 50rem;
+    font-weight: bold;
+    font-family: cursive;
+  }
+  
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background: linear-gradient(-90deg, #1aa37a, #9dffb3);
+  }
