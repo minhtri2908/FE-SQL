@@ -14,9 +14,9 @@ const Datatable = ({columns}) => {
 
 
 
-  const handleDelete = async (_id) => {
+  const handleDelete = async (id) => {
     try {
-      await axiosInstance.delete(`api/${path}/${_id}`);
+      await axiosInstance.delete(`api/${path}/${id}`);
     } catch (err) {}
   };
 
@@ -33,7 +33,7 @@ const Datatable = ({columns}) => {
             </Link>
             <div
               className="deleteButton"
-              onClick={() => handleDelete(params.row._id)}  
+              onClick={() => handleDelete(params.row.id)}  
             >
               Xóa
             </div>
@@ -57,7 +57,7 @@ const Datatable = ({columns}) => {
         pageSize={9}
         rowsPerPageOptions={[9]}
         checkboxSelection
-        getRowId={(row) => row._id}
+        getRowId={(row) => row.id}
       />
     </div>
   );

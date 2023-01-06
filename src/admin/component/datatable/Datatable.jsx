@@ -10,9 +10,9 @@ const Datatable = ({columns}) => {
   const { data, loading, error } = useFetch(`api/${path}`);
 
 
-  const handleDelete = async (_id) => {
+  const handleDelete = async (id) => {
     try {
-      await axiosInstance.delete(`api/${path}/${_id}`);
+      await axiosInstance.delete(`api/${path}/${id}`);
     } catch (err) {}
   };
 
@@ -24,12 +24,12 @@ const Datatable = ({columns}) => {
       renderCell: (params) => {
         return (
           <div className="cellAction">
-            <Link to={`/${path}/${params.row._id}`} style={{ textDecoration: "none" }}>
+            <Link to={`/${path}/${params.row.id}`} style={{ textDecoration: "none" }}>
               <div className="viewButton">Xem</div>
             </Link>
             <div
               className="deleteButton"
-              onClick={() => handleDelete(params.row._id)}  
+              onClick={() => handleDelete(params.row.id)}  
             >
               Xóa
             </div>
@@ -56,7 +56,7 @@ const Datatable = ({columns}) => {
         columns={columns.concat(actionColumn)}
         pageSize={8}
         rowsPerPageOptions={[60]}
-        getRowId={(row) => row._id}
+        getRowId={(row) => row.id}
       />
     </div>
   );

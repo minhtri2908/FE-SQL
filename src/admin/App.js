@@ -161,7 +161,7 @@ function App() {
                 }
               />
                <Route
-                path=":_id">
+                path=":id">
                     <Route index
                     element={
                   <ProtectedRoute>

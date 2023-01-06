@@ -22,7 +22,7 @@ import format from 'date-fns/format';
 import axios from 'axios';
 import moment from 'moment';
 
-function Hotel() {  
+function Hotel() {
   const navigate = useNavigate();
   const location = useLocation();
   // console.log(JSON.parse(localStorage.getItem('user')).details.username);
@@ -35,8 +35,8 @@ function Hotel() {
   const hotelId = location.state.hotelId;
   const date = location.state.date;
 
-  const {data,loading} = useFetch(`/api/hotels/find/${id}`);
-  console.log(data);
+  const { data, loading } = useFetch(`/api/hotels/find/${id}`);
+  // console.log(data);
   // console.log((data.image));
   // console.log(date);
   const MILLISECONDS_PER_DAYS = 1000 * 60 * 60 * 24;
@@ -56,9 +56,9 @@ function Hotel() {
     const proceed = async () => {
       const data2 = await axiosInstance.get(`/api/hotels/room/${id}`);
       setData1(data2.data);
-    }
+    };
     proceed();
-  },[])
+  }, []);
   //console.log(data1);
 
   const getDates = (startDate, endDate) => {
@@ -80,32 +80,31 @@ function Hotel() {
     const isFound = roomNumber.unavailableDates.some((date) =>
       allDates.includes(new Date(date).getTime())
     );
-    console.log(isFound, roomNumber);
+    console.log(new Date().getTime());
+    console.log(isFound);
+    // console.log(isFound, roomNumber);
     return !isFound;
   };
 
-
   const handleClick = async () => {
     try {
-      
       var tot = 0;
       data1.map((item) => {
-        
         item.roomNumbers.map((roomNumber) => {
           const checkbox = document.getElementById(roomNumber.number);
 
-          if (checkbox.checked === true){
+          if (checkbox.checked === true) {
             const value = checkbox.value;
             const name = checkbox.name;
             const id = checkbox.id;
             selectedRoom.push(value);
-            room.push({price: name, roomnum: id});
+            room.push({ price: name, roomnum: id });
             tot = tot + Number(name);
           }
           return room, selectedRoom;
-        })
+        });
         return room, selectedRoom;
-      })
+      });
       console.log(tot);
 
       navigate('/payment', {
@@ -118,12 +117,11 @@ function Hotel() {
           selectedRoom,
           tot,
           allDates,
-        }
+        },
       });
-      
     } catch (err) {
       console.log(err);
-    };
+    }
   };
 
   return (
@@ -190,22 +188,13 @@ function Hotel() {
                 </div>
                 <div className="h-25 row description_picture_bottom">
                   <span className="col ">
-                    <img
-                      src={data.image4}
-                      alt={data.name}
-                    /> 
+                    <img src={data.image4} alt={data.name} />
                   </span>
                   <span className="col ">
-                     <img
-                      src={data.image5}
-                      alt={data.name}
-                    />
+                    <img src={data.image5} alt={data.name} />
                   </span>
                   <span className="col ">
-                     <img
-                      src={data.image6}
-                      alt={data.name}
-                    />
+                    <img src={data.image6} alt={data.name} />
                   </span>
                 </div>
               </div>
@@ -364,40 +353,41 @@ Vung Tau Melody Apartment đã chào đón khách Booking.com từ 23 tháng 4 2
               <th scope="flex-fill"></th>
             </tr>
           </thead>
-          {
-            data1.map((item) => (
+          {data1.map(
+            (item) => (
               console.log(item),
-              <tbody>
-                <tr>
-                  <td>
-                    <a>{item.title}</a>
-                  </td>
-                  <td>
-                    <IoIosMan /> x {item.maxPeople}
-                  </td>
-                  <td>
-                    <div>{item.price} VND</div>
-                  </td>
-                  <td>
-                    <div>
-                      {item.roomNumbers.map((roomNumber) => (
-                        <div>
-                          <input
-                            type="checkbox"
-                            disabled={!isAvailable(roomNumber)}
-                            id={roomNumber.number}
-                            value={ roomNumber.id }
-                            name={ item.price }
-                          />
-                          <label htmlFor={roomNumber.number}>
-                            Number of Room: <strong>{roomNumber.number}</strong>
-                          </label>
-                        </div>
-                      ))}
-                    </div>
-                  </td>
-                  <td>
-
+              (
+                <tbody>
+                  <tr>
+                    <td>
+                      <a>{item.title}</a>
+                    </td>
+                    <td>
+                      <IoIosMan /> x {item.maxPeople}
+                    </td>
+                    <td>
+                      <div>{item.price} VND</div>
+                    </td>
+                    <td>
+                      <div>
+                        {item.roomNumbers.map((roomNumber) => (
+                          <div>
+                            <input
+                              type="checkbox"
+                              disabled={!isAvailable(roomNumber)}
+                              id={roomNumber.number}
+                              value={roomNumber.id}
+                              name={item.price}
+                            />
+                            <label htmlFor={roomNumber.number}>
+                              Number of Room:{' '}
+                              <strong>{roomNumber.number}</strong>
+                            </label>
+                          </div>
+                        ))}
+                      </div>
+                    </td>
+                    <td>
                       <button
                         type="button"
                         className="w-100 btn btn-primary"
@@ -405,12 +395,12 @@ Vung Tau Melody Apartment đã chào đón khách Booking.com từ 23 tháng 4 2
                       >
                         Đặt chỗ
                       </button>
-
-                  </td>
-                </tr>
-              </tbody>
-            ))
-          }
+                    </td>
+                  </tr>
+                </tbody>
+              )
+            )
+          )}
         </table>
       </div>
       <Footer />
